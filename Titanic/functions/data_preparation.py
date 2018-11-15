@@ -13,11 +13,11 @@ def load_data(process=False):
         # Drop unnecessary columns
         train = train.drop(labels=['Age', 'AgeCategories', 'Cabin',
                                    'Embarked', 'Fare', 'Name', 'Parch',
-                                   'Sex', 'Pclass', 'Ticket'],
+                                   'Sex', 'SibSp', 'Pclass', 'Ticket'],
                            axis=1)
         test = test.drop(labels=['Age', 'AgeCategories', 'Cabin',
                                  'Embarked', 'Fare', 'Name', 'Parch',
-                                 'Sex', 'Pclass', 'Ticket'],
+                                 'Sex', 'SibSp', 'Pclass', 'Ticket'],
                          axis=1)
     return train, test
 
