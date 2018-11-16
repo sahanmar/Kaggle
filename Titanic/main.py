@@ -1,5 +1,5 @@
-from functions.data_preparation import *
-from models.random_forest import *
+from Titanic.functions.data_preparation import *
+from Titanic.models.random_forest import *
 
 
 # Load the data (both train and test sets)

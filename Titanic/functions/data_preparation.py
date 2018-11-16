@@ -5,8 +5,8 @@ import pandas as pd
 def load_data(process=False):
     # Load csv-files
     print("Loading the data...")
-    train = pd.read_csv(".\\all\\train.csv", encoding="UTF-8")
-    test = pd.read_csv(".\\all\\test.csv", encoding="UTF-8")
+    train = pd.read_csv(".\\data\\train.csv", encoding="UTF-8")
+    test = pd.read_csv(".\\data\\test.csv", encoding="UTF-8")
     if process:
         print("Processing the data...")
         train, test = process_data(train, test)
