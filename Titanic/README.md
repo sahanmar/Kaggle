@@ -2,10 +2,9 @@
 
 | Task        | Status           | Path  |
 | ------------- |:-------------:| -----:|
-| Get titles from the names and group some of the titles together | **DONE** | *dev-sahanmar -> clean_data.py* |
+| Get 'Title' from the names and group some values together | **DONE** | *dev-sahanmar -> clean_data.py* |
 | Get titles from the names and create dummies for all of them | **DONE** | *dev-salisare -> functions/data_preparation.py* |
 | Calculate median values with respect to each group of titles and fill in these values instead if NAN | **-** | *-* |
-| Create dummies for 'Titles' | **DONE** | *dev-salisare -> functions/data_preparation.py* |
 | Create dummies for 'Sex' | **DONE** | *dev-salisare -> functions/data_preparation.py* |
 | Create dummies for 'Embarked' | **DONE** | *dev-salisare -> functions/data_preparation.py* |
 | Fill in median value of 'Fare' on the NAN places | **-** | *-* |
