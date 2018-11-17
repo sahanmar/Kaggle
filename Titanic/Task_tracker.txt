@@ -1,9 +1,0 @@
-Cleaning data
-
-1) Get titles from the names and group some of the titles together (Done! Sahanmar branch (main.py and clean_data.py)
-2) Calculate median values with respect to each group of titles and fill in these values instead if NAN
-3) Create slopes with ones and zeros where each slope represents specific title. If specific title then 1, else 0
-4) Change male and female to ones and zeros. 
-5) Create slopes with ones and zeros where each slope represents Port of Embarkation. 
-6) Fill in median value of Fare on the NAN places
-... 
