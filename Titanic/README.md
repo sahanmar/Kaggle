@@ -16,4 +16,6 @@
 
 | Model Name | Variables | Accuracy on the Local Test Set | Accuracy on Kaggle |
 | ------------- |:-------------:| -----:| -----:|
-| Random Forest | (normalized 'Age', 'Pclass' dummies, 'Sex' dummies, normalized 'Fare', 'Embarked' dummies) | **~86%** | **~77.5%** |
+| Random Forest | (normalized 'Age', 'Pclass' dummies, 'Sex' dummies, normalized 'Fare', 'Embarked' dummies) | **~86.6%** | **~77.5%** |
+| Random Forest | (factorized 'Age', 'Pclass' dummies, 'Sex' dummies, normalized 'Fare', 'Embarked' dummies, non-grouped 'Title') | **~86%** | **~76.1%** |
+| Random Forest | (factorized 'Age', 'Pclass' dummies, 'Sex' dummies, normalized 'Fare', non-grouped 'Title') | **-** | **~75%** |
