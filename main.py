@@ -45,7 +45,3 @@ if __name__=='__main__':
     
     #Create submission documents
     models.submission_doc(train_data, train_labels, test_data)
-    
-    
-    
-    
