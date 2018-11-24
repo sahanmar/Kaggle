@@ -113,3 +113,30 @@ def family_size_col(data: pd.DataFrame):
     data['IsAlone'].loc[data['FamilySize'] > 1] = 0
     
     return data
+
+
+def decision_tree_data(data: pd.DataFrame):
+    
+    drop_columns = ['Pclass', 'Age', 'SibSp', 'Parch','Fare', 'Embarked']
+    
+    data['Tittle'] = data['Name'].str.split('.').str[0].str.split(',').str[1].str.split().str[0]
+    data['Tittle'] = data['Tittle'].replace(['Capt', 'Don', 'Rev', 'Sir', 'Mr' ],'Mr')
+    data['Tittle'] = data['Tittle'].replace(['Mlle', 'Ms', 'Miss'],'Miss')
+    data['Tittle'] = data['Tittle'].replace(['Mme','Rothes', 'the', 'Lady', 'Dona'],'Mrs')
+    data['Tittle'] = data['Tittle'].replace(['Dr', 'Jonkheer', 'Col', 'Major'],'Other')
+    
+    data['Name'] = data['Name'].str.split().str[0].str.split(',').str[0]
+    
+    dummies_arr = ['Sex']
+    
+    #Create dummy columns
+    for col in dummies_arr:
+        data = create_dummies(data,col)
+        data = data.drop(col, axis=1)
+    
+    for col in drop_columns:
+        data = data.drop(col, axis=1)
+    
+    return data
+
+    
