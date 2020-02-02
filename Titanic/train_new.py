@@ -27,7 +27,7 @@ def main():
     ### Data Processing ###
     data = get_data(data_path)
     titanic_dict, header = create_dict(data)
-    print(titanic_dict) #[header[0]]
+    #print(titanic_dict) #[header[0]]
 
-if __name__ != "__main__": #mainly... for importing and checking :)
+if __name__ == "__main__": #mainly... for importing and checking :)
     main()
